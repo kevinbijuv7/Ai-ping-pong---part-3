@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>AI Ping Pong</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/addons/p5.sound.min.js"></script>
+
+</head>
+
+<body background="Background.jpg">
+    <center>
+        <div class="heading btn btn-danger">
+            <img src="Capture.JPG" alt="Logo" width="80" height="80" id="logo">
+            <h1 id="heading">AI PING PONG by Kevin Biju Varghese</h1>
+            <button id="instruction_btn" class="btn btn-primary" data-target="#myModal"
+                data-toggle="modal">Instructions</button>
+
+        </div>
+        <br>
+        <br>
+        <button id="play_btn" onclick="startGame();">Play Game</button>
+        <br><br><br>
+        <span id="status" class="btn btn-warning">Status:</span>
+        <br><br>
+        <button id="restart_btn" onclick="restart();">Restart Game</button>
+        <div id="myModal" class="modal fade">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button class="close" data-dismiss="modal">&times;</button>
+                        <h4>Instructions</h4>
+                    </div>
+                    <div class="modal-body">
+                      <ol>Allow the pop-up that says "Can (website name) use your webcam?"</ol>
+                        <ol>First keep your laptop screen straight</ol>
+                        <ol>Move yourself approximately 3-4 feet away from the laptop</ol>
+                        <ol>Move your nose in ascending and descending manner, a red dot should appear on your nose</ol>
+                        <ol>Now press the play button and again move yourself 3-4 feet away from the laptop</ol>
+                        <ol>The red paddel is your paddel, that will move as per the movement of your nose</ol>
+                        <img src="Untitled Jam (3)-1.png" class="instrution_image" width="400" height="600"> 
+                        <img src="Untitled Jam (2)-1.png" class="instrution_image"width="400" height="600">  
+                        <div class="modal-body">
+                          
+                          </div>
+                    </div>
+                </div>
+
+                <div id="canvas"></div>
+
+    </center>
+    <div class="wrapper">
+        <div class="footer">Developed by Kevin Biju Varghese</div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
